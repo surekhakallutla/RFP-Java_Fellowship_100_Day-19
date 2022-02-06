@@ -8,7 +8,10 @@ public class UserRegistration {
 		System.out.println("Enter Valid First Name");
 		String fName = ScannerUtility.StringInput();
 		System.out.println(fName + ":" + isMatch(RegularExpression.fNameRegex,fName));
-		
+		System.out.println("Enter Valid Last Name");
+		String lName = ScannerUtility.StringInput();
+		System.out.println(lName + ":" + isMatch(RegularExpression.lNameRegex,lName));
+
 	}
 	
 	private static boolean isMatch(String regex,String userInput) {
