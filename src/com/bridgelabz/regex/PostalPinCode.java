@@ -12,7 +12,7 @@ public class PostalPinCode {
 	}
 	
 	private static boolean isMatch(String regex,String userInput) {
-		if(Pattern.matches(regex, userInput) == true)
+		if(Pattern.matches(regex, userInput))
 			System.out.println("The given input is valid");
 		else
 			System.out.println("The given input is invalid");
