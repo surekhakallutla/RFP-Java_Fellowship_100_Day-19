@@ -13,10 +13,14 @@ public class UserRegistration {
 		System.out.println("Enter Valid Last Name");
 		String lName = ScannerUtility.StringInput();
 		System.out.println(lName + ":" + isMatch(RegularExpression.lNameRegex,lName));
-*/		
+		
 		System.out.println("Enter email id");
 		String eMail = ScannerUtility.StringInput();
 		System.out.println(eMail + ":" + isMatch(RegularExpression.eMailRegex,eMail));
+*/
+		System.out.println("Enter mobile number");
+		String mobileNum = ScannerUtility.StringInput();
+		System.out.println(mobileNum + ":" + isMatch(RegularExpression.mobileNumRegex,mobileNum));
 
 
 	}
