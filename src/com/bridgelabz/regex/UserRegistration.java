@@ -31,11 +31,17 @@ public class UserRegistration {
 		String passwordR2 = ScannerUtility.StringInput();
 		String passwordR2Regex = "(?=.*[A-Z])([a-zA-Z0-9._+=-@#$%^&*]{8,})";
 		System.out.println(passwordR2 + ":" + isMatch(passwordR2Regex,passwordR2));
-*/		
+		
 		System.out.println("Enter password");
 		String passwordR3 = ScannerUtility.StringInput();
 		String passwordR3Regex = "(?=.*[A-Z])(?=.*[0-9])([a-zA-Z0-9._+=-@#$%^&*]{8,})";
 		System.out.println(passwordR3 + ":" + isMatch(passwordR3Regex,passwordR3));
+*/		
+		System.out.println("Enter password");
+		String passwordR4 = ScannerUtility.StringInput();
+		String passwordR4Regex = "(?=.*[A-Z])(?=.*[0-9])(?=.*[._+=-@#$%^&*])([a-zA-Z0-9._+=-@#$%^&*]{8,})";
+		System.out.println(passwordR4 + ":" + isMatch(passwordR4Regex,passwordR4));
+
 
 
 	}
