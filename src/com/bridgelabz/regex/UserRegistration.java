@@ -26,13 +26,16 @@ public class UserRegistration {
 		String passwordR1 = ScannerUtility.StringInput();
 		String passwordR1Regex = "[a-zA-Z0-9._+=-@#$%^&*]{8,20}";
 		System.out.println(passwordR1 + ":" + isMatch(passwordR1Regex,passwordR1));
-*/
+
 		System.out.println("Enter password");
 		String passwordR2 = ScannerUtility.StringInput();
 		String passwordR2Regex = "(?=.*[A-Z])([a-zA-Z0-9._+=-@#$%^&*]{8,})";
 		System.out.println(passwordR2 + ":" + isMatch(passwordR2Regex,passwordR2));
-
-
+*/		
+		System.out.println("Enter password");
+		String passwordR3 = ScannerUtility.StringInput();
+		String passwordR3Regex = "(?=.*[A-Z])(?=.*[0-9])([a-zA-Z0-9._+=-@#$%^&*]{8,})";
+		System.out.println(passwordR3 + ":" + isMatch(passwordR3Regex,passwordR3));
 
 
 	}
