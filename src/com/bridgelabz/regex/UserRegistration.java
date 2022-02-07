@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 public class UserRegistration {
 
 	public static void main(String[] args) {
-/*
+
 		System.out.println("Enter Valid First Name");
 		String fName = ScannerUtility.StringInput();
 		System.out.println(fName + ":" + isMatch(RegularExpression.fNameRegex,fName));
@@ -14,35 +14,17 @@ public class UserRegistration {
 		String lName = ScannerUtility.StringInput();
 		System.out.println(lName + ":" + isMatch(RegularExpression.lNameRegex,lName));
 		
-		System.out.println("Enter email id");
+		System.out.println("Enter Valid email id");
 		String eMail = ScannerUtility.StringInput();
 		System.out.println(eMail + ":" + isMatch(RegularExpression.eMailRegex,eMail));
 
-		System.out.println("Enter mobile number");
+		System.out.println("Enter Valid mobile number");
 		String mobileNum = ScannerUtility.StringInput();
 		System.out.println(mobileNum + ":" + isMatch(RegularExpression.mobileNumRegex,mobileNum));
 
-		System.out.println("Enter password");
-		String passwordR1 = ScannerUtility.StringInput();
-		String passwordR1Regex = "[a-zA-Z0-9._+=-@#$%^&*]{8,20}";
-		System.out.println(passwordR1 + ":" + isMatch(passwordR1Regex,passwordR1));
-
-		System.out.println("Enter password");
-		String passwordR2 = ScannerUtility.StringInput();
-		String passwordR2Regex = "(?=.*[A-Z])([a-zA-Z0-9._+=-@#$%^&*]{8,})";
-		System.out.println(passwordR2 + ":" + isMatch(passwordR2Regex,passwordR2));
-		
-		System.out.println("Enter password");
-		String passwordR3 = ScannerUtility.StringInput();
-		String passwordR3Regex = "(?=.*[A-Z])(?=.*[0-9])([a-zA-Z0-9._+=-@#$%^&*]{8,})";
-		System.out.println(passwordR3 + ":" + isMatch(passwordR3Regex,passwordR3));
-*/		
-		System.out.println("Enter password");
-		String passwordR4 = ScannerUtility.StringInput();
-		String passwordR4Regex = "(?=.*[A-Z])(?=.*[0-9])(?=.*[._+=-@#$%^&*])([a-zA-Z0-9._+=-@#$%^&*]{8,})";
-		System.out.println(passwordR4 + ":" + isMatch(passwordR4Regex,passwordR4));
-
-
+		System.out.println("Enter Valid password");
+		String password = ScannerUtility.StringInput();
+		System.out.println(password + ":" + isMatch(RegularExpression.passwordRegex,password));
 
 	}
 	
