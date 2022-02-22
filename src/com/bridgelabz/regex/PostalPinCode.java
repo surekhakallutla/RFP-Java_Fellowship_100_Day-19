@@ -8,7 +8,7 @@ public class PostalPinCode {
 		System.out.println("Enter the Pincode");
 		String pinCode = ScannerUtility.StringInput();
 //		System.out.println(pinCode + " : "+ Pattern.matches(RegularExpression.pinCodeRegex, pinCode));
-		System.out.println(pinCode + " :" + isMatch(RegularExpression.pinCodeRegex, pinCode));
+		System.out.println(pinCode + " :" + isMatch(RegularExpression.PINCODE_REGEX, pinCode));
 	}
 	
 	private static boolean isMatch(String regex,String userInput) {

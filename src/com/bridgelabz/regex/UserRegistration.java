@@ -8,23 +8,23 @@ public class UserRegistration {
 
 		System.out.println("Enter Valid First Name");
 		String fName = ScannerUtility.StringInput();
-		System.out.println(fName + ":" + isMatch(RegularExpression.fNameRegex,fName));
+		System.out.println(fName + ":" + isMatch(RegularExpression.FNAME_REGEX,fName));
 		
 		System.out.println("Enter Valid Last Name");
 		String lName = ScannerUtility.StringInput();
-		System.out.println(lName + ":" + isMatch(RegularExpression.lNameRegex,lName));
+		System.out.println(lName + ":" + isMatch(RegularExpression.LNAME_REGEX,lName));
 		
 		System.out.println("Enter Valid email id");
 		String eMail = ScannerUtility.StringInput();
-		System.out.println(eMail + ":" + isMatch(RegularExpression.eMailRegex,eMail));
+		System.out.println(eMail + ":" + isMatch(RegularExpression.EMAIL_REGEX,eMail));
 
 		System.out.println("Enter Valid mobile number");
 		String mobileNum = ScannerUtility.StringInput();
-		System.out.println(mobileNum + ":" + isMatch(RegularExpression.mobileNumRegex,mobileNum));
+		System.out.println(mobileNum + ":" + isMatch(RegularExpression.MOBILENUMBER_REGEX,mobileNum));
 
 		System.out.println("Enter Valid password");
 		String password = ScannerUtility.StringInput();
-		System.out.println(password + ":" + isMatch(RegularExpression.passwordRegex,password));
+		System.out.println(password + ":" + isMatch(RegularExpression.PASSWORD_REGEX,password));
 
 	}
 	
